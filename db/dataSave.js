@@ -38,6 +38,11 @@ class noteSave {
         .then(noteUpdate=> this.write(noteUpdate))
         .then(()=> addNewNote);
     }
+
+    noteDelete(id){
+        return this.fetchNote().then(newNotes=>newNotes.filter(newNotes=> newNotes.id !==id))
+        .then(targetNotes=> this.write(targetNotes));
+    }
 }
 
 module.exports = new noteSave();

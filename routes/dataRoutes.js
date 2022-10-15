@@ -13,4 +13,11 @@ newroute.post("/notes", (req,res)=>{
     dataSave.noteAdd(req.body).then((newNote)=> res.json(newNote)).catch(error => res.status(404).json(error));
 });
 
+//delete Note
+newroute.delete("/notes/:id", function(req,res){
+    dataSave.noteDelete(req.params.id)
+    .then(()=>res.json({ok:true}))
+    .catch(error=> res.status(404).json(error));
+})
+
 module.exports = newroute;
