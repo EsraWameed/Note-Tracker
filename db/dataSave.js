@@ -27,7 +27,7 @@ class noteSave {
     }
 
     noteAdd(newNote){
-        const { title, text} = note;
+        const { title, text} = newNote;
         if (!title || !text){
             throw new Error ("Ensure to add a title or text please")
         }

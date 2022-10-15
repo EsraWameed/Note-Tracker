@@ -1,5 +1,5 @@
 const express = require('express');
-const apiRoutes = require('./routes/dataRoutes');
+const dataRoutes = require('./routes/dataRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 const app = express();
