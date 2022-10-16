@@ -1,7 +1,7 @@
 # Note Tracker
 
 ## Deployed Application
-https://esrawameed.github.io/App-Weather-Forecast/
+https://note-tracking.herokuapp.com/
 ## Description
 This application was created to allow users to have a place where they could keep their thoughts and tasks organized by creating and saving as many notes as they'd like. Users could also choose to delete those notes once complete.
 ## features
